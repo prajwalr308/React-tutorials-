@@ -1,11 +1,24 @@
 import React from 'react'
 
-const lesson2 = () => {
+///react children
+const Lesson2 = () => {
+    const list = React.createElement(
+        "ul",
+        null,
+        React.createElement("li", null, "2 lb salmon"),
+        React.createElement("li", null, "5 sprigs fresh rosemary"),
+        React.createElement("li", null, "2 tablespoons olive oil"),
+        React.createElement("li", null, "2 small lemons"),
+        React.createElement("li", null, "1 teaspoon kosher salt"),
+        React.createElement("li", null, "4 cloves of chopped garlic")
+        );
+        console.log("children :",list);
     return (
         <div>
-            
+            {list}
+            ----------------------------------------------------------------
         </div>
     )
 }
 
-export default lesson2
+export default Lesson2

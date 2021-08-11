@@ -7,14 +7,15 @@ const Lesson1 = () => {
     const Jsx=()=>{
      return <h2>JSX method</h2>
     }
-  console.log("jsx in react ",<Jsx />)
-    console.log(h1)
+  console.log("jsx in react :",<Jsx />)
+    console.log("element:",h1)
     return(
       <div>
           <p>react create element: {h1}</p>
         {
          <Jsx />
         }
+        ------------------------------------------------------------------------------------------------
       </div>
      
     )
