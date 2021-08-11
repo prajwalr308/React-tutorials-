@@ -15,6 +15,7 @@ const Lesson2 = () => {
         console.log("children :",list);
     return (
         <div>
+            <p>key is null so the error </p>
             {list}
             ----------------------------------------------------------------
         </div>
