@@ -16,7 +16,8 @@ function App() {
      <Lesson1 />
      <Lesson2 />
      <Lesson3 />
-<StarRating />
+<StarRating   
+style={{backgroundColor:"lightblue"}} />
     </div>
    
   )
