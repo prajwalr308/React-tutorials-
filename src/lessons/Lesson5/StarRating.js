@@ -17,7 +17,7 @@ export default function StarRating({style={},starColor="red" ,totalStars = 5 }) 
           key={i}
           selected={selectedStars > i}
           onSelect={() => setSelectedStars(i + 1)}
-          starColor="blue"
+       
         />
       ))}
       <p>
