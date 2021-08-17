@@ -3,8 +3,8 @@ import { FaStar } from "react-icons/fa";
 
 const createArray = (length) => [...Array(length)];
 
-export default function StarRating({style={},starColor="red" ,totalStars = 5 }) {
-  const [selectedStars, setSelectedStars] = useState(0);
+export default function StarRating({style={},starColor="red" ,totalStars = 5 ,selectedStars = 0,onRate=f=>f}) {
+  // const [selectedStars, setSelectedStars] = useState(0);
   const Star = ({ selected = false, onSelect = (a) => a ,}) => {
       console.log(onSelect);
    return <FaStar color={selected ? starColor : "grey"} onClick={onSelect} />
@@ -16,7 +16,7 @@ export default function StarRating({style={},starColor="red" ,totalStars = 5 }) 
         <Star
           key={i}
           selected={selectedStars > i}
-          onSelect={() => setSelectedStars(i + 1)}
+          onSelect={() => onRate(i + 1)}
        
         />
       ))}

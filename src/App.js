@@ -17,9 +17,17 @@ function App() {
       <Lesson1 />
       <Lesson2 />
       <Lesson3 />
-      <StarRating style={{ backgroundColor: "lightblue" }} />
+  
 
       <ColorList colors={colors}
+     onRateColor={(id, rating) => {
+      const newColors = colors.map(color =>
+      color.id === id ? { ...color, rating } : color
+      );
+      setColors(newColors);
+      }}
+      
+
       onRemoveColor={id => {
         const newColors = colors.filter(color => color.id !== id);
         setColors(newColors);
