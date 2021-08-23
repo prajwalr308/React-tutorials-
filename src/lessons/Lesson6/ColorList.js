@@ -8,6 +8,7 @@ export default function ColorList({ colors = [], onRemoveColor = f => f,onRateCo
       {colors.map((color) => (
         <Color key={color.id} {...color} onRemove={onRemoveColor} onRate={onRateColor} />
       ))}
+      ----------------------------------------------------------------------------
     </div>
   );
 }
