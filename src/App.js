@@ -11,6 +11,7 @@ import ColorList from "./lessons/Lesson6/ColorList";
 import colorData from "./lessons/Lesson6/color-data";
 import AddColorForm from "./lessons/Lesson6/AddColorForm";
 import {v4} from 'uuid'
+import Temp from "./temp test/Temp";
 
 function App() {
   const [colors, setColors] = useState(colorData)
@@ -51,6 +52,7 @@ setColors(newColors);
       }
     }
       />
+      <Temp />
     </div>
   );
 }
