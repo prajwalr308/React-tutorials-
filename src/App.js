@@ -15,6 +15,7 @@ import Temp from "./temp test/Temp";
 
 function App() {
   const [colors, setColors] = useState(colorData)
+  const [num, setnum] = useState(0)
   return (
     <div>
       <Lesson1 />
@@ -52,7 +53,9 @@ setColors(newColors);
       }
     }
       />
-      <Temp />
+      <Temp onpress={(anyNum)=>{var magic=0;
+        magic=anyNum+1
+        console.log(magic)}}  />
     </div>
   );
 }

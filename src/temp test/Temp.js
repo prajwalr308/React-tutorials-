@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import TempChild from './TempChild'
+import TempMid from './TempMid'
 
-const Temp = () => {
+const Temp = ({onpress}) => {
     const [num, setNum] = useState(5)
    
     return (
         <div>
-            <TempChild onpress={(anyNum)=>{var magic=0;
-        magic=anyNum+1
-        console.log(magic)}} />
+            <TempChild onpress={()=>onpress(2)} />
         </div>
     )
 }
